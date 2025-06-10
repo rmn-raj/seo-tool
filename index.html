@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Audit Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SEO Audit Tool</h1>
+            <p>Check the basic SEO elements of any webpage</p>
+        </header>
+
+        <main>
+            <section class="url-input-section">
+                <form id="audit-form">
+                    <div class="input-group">
+                        <input type="url" id="url-input" placeholder="Enter a URL to audit (e.g., https://example.com)" required>
+                        <button type="submit" id="audit-button">Analyze</button>
+                    </div>
+                </form>
+                <div id="loading" class="hidden">Analyzing... Please wait</div>
+            </section>
+
+            <section id="results" class="hidden">
+                <div class="score-container">
+                    <div id="seo-score">
+                        <span class="score-value">0</span>
+                        <span class="score-label">SEO Score</span>
+                    </div>
+                </div>
+
+                <div class="audit-results">
+                    <h2>Audit Results</h2>
+                    
+                    <div class="result-card" id="title-result">
+                        <h3>Title Tag</h3>
+                        <div class="result-content"></div>
+                        <div class="result-status"></div>
+                    </div>
+                    
+                    <div class="result-card" id="meta-description-result">
+                        <h3>Meta Description</h3>
+                        <div class="result-content"></div>
+                        <div class="result-status"></div>
+                    </div>
+                    
+                    <div class="result-card" id="h1-result">
+                        <h3>H1 Tags</h3>
+                        <div class="result-content"></div>
+                        <div class="result-status"></div>
+                    </div>
+                    
+                    <div class="result-card" id="img-alt-result">
+                        <h3>Image Alt Tags</h3>
+                        <div class="result-content"></div>
+                        <div class="result-status"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created for SEO analysis | Use responsibly</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
