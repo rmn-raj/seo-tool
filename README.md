@@ -76,6 +76,3 @@ The Python backend provides an alternative way to fetch and analyze web pages, w
 - Implement historical data comparison
 - Add competitor analysis features
 
-## License
-
-MIT 
